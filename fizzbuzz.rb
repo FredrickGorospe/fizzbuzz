@@ -8,14 +8,15 @@ class Fizzbuzz
   def display 
     number.times do |i|
       if i % 3 == 0
-        puts "Fizz"
+        print "Fizz"
       end
       if i % 5 == 0
-        puts "Buzz"
+        print "Buzz"
       end
-
-      puts i 
+      if (i % 3 != 0) && (i % 5 != 0)
+      print i
+    end
+      puts
     end
   end
-  
 end
